@@ -1,4 +1,4 @@
-MACHINE = "raspberrypi"
+MACHINE = "bananapi-m2-zero"
 DISTRO = "poky"
 PACKAGE_CLASSES = "package_ipk"
 SDKMACHINE = "x86_64"
