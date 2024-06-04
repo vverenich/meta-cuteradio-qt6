@@ -1,1 +1,2 @@
-# meta-cuteradio-qt6
+# meta-cuteradio
+Yocto meta layer for Qt Internet Radio
