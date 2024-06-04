@@ -7,13 +7,13 @@ SECTION = "app"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM="file://LICENSE;md5=1ef68d7e526c164e11da8965fdbed52c"
 
-inherit cmake_qt5 update-rc.d
+inherit cmake update-rc.d
 
 SRC_URI = "\
     git://github.com/vverenich/cuteradio-apps.git;branch=master;protocol=https \
     file://cuteradio \
 "
-SRCREV = "5521d9ca291534c63cc9ddee770780b80d30cdb4"
+SRCREV = "25c1511566325b93a2b7c7e4ed519dbd143b2845"
 
 PV = "1.0+git${SRCREV}"
 
