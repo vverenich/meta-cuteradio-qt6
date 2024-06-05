@@ -5,6 +5,13 @@ SDKMACHINE = "x86_64"
 #USER_CLASSES = "image-mklibs image-prelink"
 PATCHRESOLVE = "noop"
 
+PREFERRED_PROVIDER_virtual/libgl = "mesa"
+PREFERRED_PROVIDER_virtual/libgl-native = "mesa-native"
+PREFERRED_PROVIDER_virtual/mesa = "mesa"
+PREFERRED_PROVIDER_virtual/libgles1 = "mesa"
+PREFERRED_PROVIDER_virtual/libgles2 = "mesa"
+PREFERRED_PROVIDER_virtual/egl = "mesa"
+
 # Keep the downloads and sstate-cache outside the build directory.
 # Then, multiple build environments can use the same downloads and sstate-cache,
 # which speeds up builds significantly.
