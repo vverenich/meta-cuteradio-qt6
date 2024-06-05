@@ -16,6 +16,6 @@ DISTRO_FEATURES:remove = " x11 wayland vulkan directfb"
 
 DISTRO_FEATURES:append = " alsa opengl"
 
-#LICENSE_FLAGS_WHITELIST = "commercial"
+LICENSE_FLAGS_ACCEPTED = "commercial"
 
 CONF_VERSION = "2"
