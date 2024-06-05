@@ -24,7 +24,7 @@ INITSCRIPT_PARAMS = "defaults 70"
 
 S = "${WORKDIR}/git"
 
-do_install_append() {
+do_install:append() {
   install -d ${D}${sysconfdir}/init.d/
   install -m 0755 ${WORKDIR}/cuteradio ${D}${sysconfdir}/init.d/cuteradio
 }
