@@ -3,7 +3,7 @@ LICENSE = "MIT"
 
 inherit core-image
 
-DEPENDS += "bcm2835-bootfiles"
+# DEPENDS += "bcm2835-bootfiles"
 
 IMAGE_FEATURES += "\
     splash \
