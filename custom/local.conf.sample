@@ -2,7 +2,7 @@ MACHINE = "bananapi-m2-zero"
 DISTRO = "poky"
 PACKAGE_CLASSES = "package_ipk"
 SDKMACHINE = "x86_64"
-USER_CLASSES = "image-mklibs image-prelink"
+#USER_CLASSES = "image-mklibs image-prelink"
 PATCHRESOLVE = "noop"
 
 # Keep the downloads and sstate-cache outside the build directory.
@@ -12,11 +12,10 @@ DL_DIR ?= "${TOPDIR}/../downloads"
 SSTATE_DIR ?= "${TOPDIR}/../sstate-cache"
 
 # Do not build package features for x11 directfb. Saves time during build.
-DISTRO_FEATURES_remove = " x11 wayland vulkan directfb"
+DISTRO_FEATURES:remove = " x11 wayland vulkan directfb"
 
-DISTRO_FEATURES_append = " alsa opengl"
+DISTRO_FEATURES:append = " alsa opengl"
 
-LICENSE_FLAGS_WHITELIST = "commercial"
+#LICENSE_FLAGS_WHITELIST = "commercial"
 
 CONF_VERSION = "1"
-

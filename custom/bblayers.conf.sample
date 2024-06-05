@@ -8,7 +8,6 @@ BBFILES ?= ""
 BBLAYERS ?= " \
   ${TOPDIR}/../sources/poky/meta \
   ${TOPDIR}/../sources/poky/meta-poky \
-  ${TOPDIR}/../sources/openembedded-core \
   ${TOPDIR}/../sources/meta-openembedded/meta-oe \
   ${TOPDIR}/../sources/meta-openembedded/meta-python \
   ${TOPDIR}/../sources/meta-sunxi \
