@@ -2,7 +2,7 @@ MACHINE = "bananapi-m2-zero"
 DISTRO = "poky"
 PACKAGE_CLASSES = "package_ipk"
 SDKMACHINE = "x86_64"
-USER_CLASSES = "image-mklibs image-prelink"
+#USER_CLASSES = "image-mklibs image-prelink"
 PATCHRESOLVE = "noop"
 
 # Keep the downloads and sstate-cache outside the build directory.
